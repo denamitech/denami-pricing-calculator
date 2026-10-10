@@ -1,0 +1,6 @@
+{
+  "name": "DENAMI — Kalkulator Harga Jual & Profit Marketplace",
+  "description": "Kalkulator harga jual dan estimasi profit marketplace terlengkap untuk seller, reseller, dan UMKM Indonesia. Menghitung HPP, biaya operasional, potongan komisi, iklan, dan target gross profit secara akurat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -13,10 +13,10 @@ import { DenamiLogo } from "./DenamiLogo";
 
 // Configurable URLs as specified by PRD Section 14
 export const DENAMI_CONFIG = {
-  catalogUrl:
-    "https://wa.me/?text=Halo%20DENAMI%2C%20saya%20ingin%20melihat%20katalog%20produk%20grosir%20dan%20sourcing.",
-  whatsappUrl:
-    "https://wa.me/?text=Halo%20DENAMI%2C%20saya%20ingin%20konsultasi%20kebutuhan%20sourcing%20dan%20pengadaan%20barang.",
+  catalogUrl: import.meta.env.VITE_DENAMI_CATALOG_URL || "#",
+
+  whatsappUrl: import.meta.env.VITE_DENAMI_WHATSAPP_URL || "#",
+
   brandTagline: "GENERAL SUPPLIER & PROCUREMENT",
 };
 
@@ -203,7 +203,7 @@ export const DenamiFooter: React.FC = () => {
                 onClick={() => setShowCatalogModal(false)}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-bold bg-[#82543F] text-white hover:bg-[#603D2D] transition-colors shadow-xs"
               >
-                <span>Chat Admin WhatsApp</span>
+                <span>Buka Catalog (September 2026)</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
